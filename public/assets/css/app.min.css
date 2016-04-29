@@ -337,3 +337,22 @@ form.form-create div {
     text-decoration: none;
     width: auto !important;
 }
+
+.msg {
+    background-color: #E7F7FF;
+    padding: 15px;
+    width: auto;
+    display: block;
+    color: #000;
+}
+
+.excerpt {
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.categ-front .excerpt {
+    margin-bottom: 0;
+}

@@ -2,7 +2,7 @@
 
 @section('content')
     @if(Session::has('message'))
-        <p>{{Session::get('message')}}</p>
+        <p class="msg">{{Session::get('message')}}</p>
     @endif
     <h1 class="h1-form">Modification d'article</h1>
     <form method="POST" action="{{url('post', $post->id)}}" enctype="multipart/form-data" class="form-create">

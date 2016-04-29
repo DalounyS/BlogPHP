@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
     @if(Session::has('message'))
-        <p>{{Session::get('message')}}</p>
+        <p class="msg">{{Session::get('message')}}</p>
     @endif
     <h1 class="h1-form">Créer votre article !</h1>
     <form method="POST" action="{{url('post')}}" enctype="multipart/form-data" class="form-create">

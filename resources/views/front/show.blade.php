@@ -9,7 +9,7 @@
             @endif
             <p>{{$post->content}}</p>
             @if($post->category)
-                <p><b>Catégorie :</b> <a href="{{URL('category',$post->category->id)}}">{{$post->category->title}}</a></p>
+                <p><b>Catégorie :</b> {{$post->category->title}}</p>
             @else
                 <p>Pas de catégorie.</p>
             @endif

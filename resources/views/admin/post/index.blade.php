@@ -2,7 +2,7 @@
 
 @section('content')
     @if(Session::has('message'))
-        <p>{{Session::get('message')}}</p>
+        <p class="msg">{{Session::get('message')}}</p>
     @endif
     {{ $posts->links() }}
     <table class="table">

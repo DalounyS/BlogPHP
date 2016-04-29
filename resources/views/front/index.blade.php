@@ -4,7 +4,7 @@
 
 @section('content')
     @if(Session::has('message'))
-        <p>{{Session::get('message')}}</p>
+        <p class="msg">{{Session::get('message')}}</p>
     @endif
         @forelse($posts as $post)
             <div class="post">
@@ -13,9 +13,11 @@
                 @else
                     Pas de titre.
                 @endif
+
                 @if($post->picture)
                     <img src="{{url('uploads', $post->picture->uri)}}">
                 @endif
+                    <p class="excerpt">{{excerpt($post->content)}}</p>
                 @if($post->category)
                     <div class="info">
                         <h3>Catégories:</h3> <p class="mot">{{$post->category->title}}</p>
